@@ -6,7 +6,7 @@
 
 - Клиенты из группы должны должны поместиться за один стол,
   поэтому вы должны поместить их за соответствующий стол.
-  
+
 - Если нет свободных столов с требуемым количеством мест, группа должна ждать в очереди.
 
 - Сев за стол группа не может его поменять.
@@ -16,17 +16,17 @@
 
 - Группы могут делить один стол, однако если в то же время у вас есть свободный стол
   с требуемым количеством мест, то нужно посадить клиентов за него.
-  
+
 - Конечно полагаем, что группа может устать ждать свои места и уйти из очереди.
 
-Заполните RestManeger класс подходящими структурами и реализуйте его конструктор с тремя методами.
+Заполните RestManager класс подходящими структурами и реализуйте его конструктор с тремя методами.
 Вы можете изменить другие классы и добавить новые методы на ваше усмотрение.
 
 ```
-public class Table 
-{ 
-   public final int size; // number of chairs 
-} 
+public class Table
+{
+   public final int size; // number of chairs
+}
 
 public class ClientsGroup
 {
@@ -52,7 +52,7 @@ public class RestManager
       // TODO
    }
 
-   // return table where a given client group is seated, 
+   // return table where a given client group is seated,
    // or null if it is still queuing or has already left
    public Table lookup (ClientsGroup group)
    {
